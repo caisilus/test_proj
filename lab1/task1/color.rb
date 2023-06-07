@@ -4,5 +4,9 @@ def color(r, g, b)
 end
 
 def component_to_hex(component)
+  component = 0 if component < 0
+  component = 255 if component > 255
+
   component.to_s(16).rjust(2, '0')
 end
+
