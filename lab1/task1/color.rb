@@ -1,7 +1,7 @@
 def color(r, g, b)
-  # pass_33(r,g,b)
-  # pass_66(r,g,b)
-  solve(r,g,b)
+  # pass_33(r, g, b)
+  pass_66(r, g, b)
+  # solve(r, g, b)
 end
 
 def pass_33(r,g,b)
@@ -19,4 +19,3 @@ end
 def component_to_hex(component)
   component.to_s(16).rjust(2, '0')
 end
-
