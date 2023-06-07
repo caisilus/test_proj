@@ -1,12 +1,22 @@
 def color(r, g, b)
-  # "FFFFFF" # passes 33%
-  [r,g,b].map {|component| component_to_hex(component) }.join.upcase # passes 100%
+  pass_33(r,g,b)
+  # pass_66(r,g,b)
+  # solve(r,g,b)
+end
+
+def pass_33(r,g,b)
+  [r,g,b].map { |component| component_to_hex(component) }.join
+end
+
+def pass_66(r,g,b)
+  [r,g,b].map { |component| component_to_hex(component) }.join.upcase
+end
+
+def solve(r,g,b)
+  [r,g,b].map {|component| component_to_hex(component.clamp(0, 255)) }.join.upcase # passes 100%
 end
 
 def component_to_hex(component)
-  component = 0 if component < 0
-  component = 255 if component > 255
-
   component.to_s(16).rjust(2, '0')
 end
 
