@@ -18,7 +18,7 @@ def pass_66(r, g, b)
 end
 
 def solve(r, g, b)
-  [r,g,b].map {|component| component_to_hex(component.clamp(0, 255)) }.join.upcase # passes 100 %
+  [r,g,b].map {|component| component_to_hex(component.clamp(0, 255)) }.join.upcase
 end
 
 def component_to_hex(component)
