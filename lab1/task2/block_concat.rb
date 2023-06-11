@@ -10,7 +10,7 @@ def solve(a, b, n)
     s += a[..n-1]
     a = a[n..]
     unless (b.nil? || b.empty?)
-      s += b[..n-2]
+      s += b[..n-1]
       b = b[n..]
     end
   end
