@@ -1,3 +1,4 @@
+# dummy comment
 def block_concat(a, b, n)
   nil
   # solve(a, b, n)
