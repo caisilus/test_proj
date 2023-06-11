@@ -1,7 +1,7 @@
 # dummy comment 2
 def block_concat(a, b, n)
-  nil
-  # solve(a, b, n)
+  # nil
+  solve(a, b, n)
 end
 
 def solve(a, b, n)
