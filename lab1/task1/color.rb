@@ -1,9 +1,9 @@
 # dummy comment 1
 def color(r, g, b)
-  pass_0(r, g, b)
+  # pass_0(r, g, b)
   # pass_33(r, g, b)
   # pass_66(r, g, b)
-  # solve(r, g, b)
+  solve(r, g, b)
 end
 
 def pass_0(r, g, b)
